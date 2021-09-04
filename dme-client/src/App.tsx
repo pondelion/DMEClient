@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <MuiThemeProvider theme={darkTheme}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route path="/" component={MemoryEdit} exact />
             <Route path="/memory_edit" component={MemoryEdit} exact />
